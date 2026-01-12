@@ -26,7 +26,7 @@ sock = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
 sock.bind((HOST, PORT))
 
 # Número de sequência esperado (0 ou 1)
-sequencia_esperada = 0
+sequencia_esperada= 0
 
 while True:
     # Recebe pacote do cliente
@@ -64,3 +64,4 @@ while True:
 
     # Alterna o número de sequência esperado
     sequencia_esperada = 1 - sequencia_esperada
+
